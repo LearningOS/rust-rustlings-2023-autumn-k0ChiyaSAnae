@@ -4,13 +4,15 @@
 //
 // Execute `rustlings hint clippy3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+// 
 use std::mem::swap;
 #[allow(unused_variables, unused_assignments)]
 fn main() {
     let my_option: Option<()> = None;
     
-    my_option.unwrap();
+    if my_option.is_none() {
+        println!("{:?}", my_option);
+    }
     
 
     let my_arr = &[
